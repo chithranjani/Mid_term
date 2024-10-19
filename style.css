@@ -1,0 +1,140 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background-image.jpg');
+    /* Photo by Keegan Everitt: https://www.pexels.com/photo/shallow-focus-photography-of-assorted-color-leather-belts-1023937/*/
+
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+header {
+    color: #FF4081;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.container {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.subtitle {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #FF4081;
+}
+
+.ic {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #FF4081;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: border 0.3s, box-shadow 0.3s;
+    outline: none;
+    background-color: #fff;
+}
+
+.input:focus {
+    border-color: #3F51B5;
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
+}
+
+.placeholder {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background-color: aliceblue;
+    font-size: 18px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.input:focus + .placeholder,
+.input:not(:placeholder-shown) + .placeholder {
+    top: -10px;
+    left: 15px;
+    font-size: 14px;
+    color: #3F51B5;
+}
+
+.submit {
+    background-color: #FF4081;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+.submit:hover {
+    background-color: #3F51B5;
+    transform: scale(1.05);
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #FF4081;
+}
+
+.belt-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.belt-table th, .belt-table td {
+    padding: 15px;
+    text-align: left;
+    border: 2px solid #FF4081;
+}
+
+.belt-table th {
+    background-color: #FF4081;
+    color: white;
+}
+
+.belt-table tr:nth-child(even) {
+    background-color: rgba(255, 192, 203, 0.5);
+}
+
+.belt-table tr:hover {
+    background-color: rgba(63, 81, 181, 0.3);
+}
+
+.action-link {
+    color: #FF4081;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.action-link:hover {
+    color: #3F51B5;
+    text-decoration: underline;
+}
+
